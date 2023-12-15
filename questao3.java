@@ -11,7 +11,8 @@ public class questao3 {
 
         if(base % 2 == 0) {
             System.out.println("O programa aceita apenas valores ímpares!");
-            return;
+            scanner.close();
+            return ;
         }
 
         for(int i = 1; i <= base; i+=2) {

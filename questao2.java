@@ -13,6 +13,7 @@ public class questao2 {
         char origem = scanner.next().charAt(0);
         if(!(origem == 'C' || origem == 'F' || origem == 'K')){
             System.out.println("A entrada especificada não é válida!");
+            scanner.close();
             return;
         }
     
@@ -20,6 +21,7 @@ public class questao2 {
         char destino = scanner.next().charAt(0);
         if(!(destino == 'C' || destino == 'F' || destino == 'K')){
             System.out.println("A entrada especificada não é válida!");
+            scanner.close();
             return;
         }
 
@@ -38,6 +40,7 @@ public class questao2 {
                     temperatura_convertida = temperatura - 273.15;
                 else if(destino == 'F') {
                     System.out.println("Conversão não disponível");
+                    scanner.close();
                     return ;
                 }
                 break;
@@ -47,6 +50,7 @@ public class questao2 {
                     temperatura_convertida = (temperatura-32)*5 / 9;
                 else if(destino == 'K') {
                     System.out.println("Conversão não disponível");
+                    scanner.close();
                     return ;
                 }
                 break;
